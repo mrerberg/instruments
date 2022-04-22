@@ -75,3 +75,31 @@ Add linting script to your package.json file
     "lint:css": "stylelint './src/**.css'"
 }
 ```
+
+### SCSS
+
+Install package:
+
+```bash
+npm install --save-dev stylelint-scss stylelint-config-standard-scss
+```
+
+Add package to stylelint config `plugins`:
+
+```yml
+plugins: ['stylelint-scss']
+```
+
+Add overrides to stylelint config:
+
+```yml
+overrides: [{ files: ['**/*.scss'], customSyntax: 'postcss-scss' }]
+```
+
+Add linting script to your package.json file
+
+```json
+{
+    "lint:scss": "stylelint './src/**.scss'"
+}
+```

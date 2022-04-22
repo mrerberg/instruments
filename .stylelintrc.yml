@@ -1,6 +1,16 @@
 extends:
     [
-        'stylelint-config-standard',
+        'stylelint-config-standard-scss',
         'stylelint-config-prettier',
         'stylelint-prettier/recommended',
     ]
+
+plugins: ['stylelint-scss']
+
+rules:
+    'at-rule-no-unknown': null
+    'scss/at-rule-no-unknown': true
+    'scss/dollar-variable-pattern': '^color'
+    'scss/selector-no-redundant-nesting-selector': true
+
+overrides: [{ files: ['**/*.scss'], customSyntax: 'postcss-scss' }]
