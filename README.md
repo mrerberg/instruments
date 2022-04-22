@@ -1,4 +1,4 @@
-# Instruments
+# Tools
 
 ## Prettier
 
