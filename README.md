@@ -75,3 +75,21 @@ Add linting script to your package.json file
     "lint:css": "stylelint './src/**.css'"
 }
 ```
+
+## [Husky](https://typicode.github.io/husky/#/)
+
+Tool for running scripts with git hooks.
+
+Install package:
+
+```bash
+npm install -D husky
+```
+
+Add script to your package.json file and run it
+
+```json
+{
+    "prepare": "husky install"
+}
+```
