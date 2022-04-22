@@ -51,3 +51,27 @@ Add linting script to your package.json file
 ```
 
 Add `.eslintignore` file to exclude some files from linting
+
+## [Stylelint](https://stylelint.io/)
+
+Css (scss, sass, less) code linting tool.
+
+Install package:
+
+```bash
+npm install --save-dev stylelint stylelint-config-standard stylelint-config-prettier stylelint-prettier
+```
+
+Create config file and add some rules to config file. See all rules [here](https://stylelint.io/user-guide/rules/list).
+
+```text
+.stylelintrc.{yml,json,js}
+```
+
+Add linting script to your package.json file
+
+```json
+{
+    "lint:css": "stylelint './src/**.css'"
+}
+```
