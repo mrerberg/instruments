@@ -42,4 +42,12 @@ Create config file and add some rules to config file. See all rules [here](https
 .eslintrc.{yml,json,js}
 ```
 
+Add linting script to your package.json file
+
+```json
+{
+    "lint:js": "eslint '**/*.js'"
+}
+```
+
 Add `.eslintignore` file to exclude some files from linting
