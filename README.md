@@ -103,3 +103,11 @@ Add linting script to your package.json file
     "lint:scss": "stylelint './src/**.scss'"
 }
 ```
+
+Add to VSCode editor settings:
+
+```json
+{
+  "stylelint.validate": ["css", "scss"],
+}
+```
